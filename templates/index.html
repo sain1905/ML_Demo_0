@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictor</title>
+</head>
+<body>
+    <h1>Predict Testing Time for Selected Benz Car</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+    <h2>UPLOAD a *.csv file which has car features with column names and press PREDICT</h2>
+        <input type="file"  name='file_upload' accept=".csv">
+        <!input type="number" name="hrs" placeholder="Number of hrs studied">
+        <input type="submit" value="Predict">
+    </form>
+
+    <h2>Testing Time prediction in seconds : {{test_time}}</h2>
+
+</body>
+</html>
