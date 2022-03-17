@@ -236,4 +236,4 @@ def predict(X):
 
     else:
         print('Data features size or the columns do not meet the requirement')
-        return [-1]
+        return np.array([-1])
