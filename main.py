@@ -21,7 +21,7 @@ def prediction():
         else:
             y = ML_model.predict(X)
 
-            if(y.any()==-1):
+            if(not y.any()):
                 return render_template('error2.html')
             else:
                 return render_template('index.html',
